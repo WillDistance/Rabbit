@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<servers>
+	 <server id="default" description="消息队列服务端配置">
+		<property name="url" value="127.0.0.1" description="主机IP"/>
+		<property name="port" value="5672" description="主机端口" />
+		<property name="username" value="guest" description="服务器用户名"/>
+		<property name="password" value="guest" description="服务器用户密码"/>
+		<property name="minPoolSize" value="1" description="连接池最小链接" />
+		<property name="maxPoolSize" value="10" description="连接池最大链接" />
+		<property name="channelSize" value="20" description="渠道线程数" />
+		<property name="virtualHost" value="/" description="虚拟主机名"/>
+	</server>
+</servers>

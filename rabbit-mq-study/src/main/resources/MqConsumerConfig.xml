@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK"?>
+<consumers>
+	<!-- 以下为华泰期货项目添加 -->
+	<consumer id="test_consumer_id">
+		<class>testDemo.TestConsumer</class>
+		<desc>华泰期货合约产品竞猜处理</desc>
+	</consumer>
+</consumers>

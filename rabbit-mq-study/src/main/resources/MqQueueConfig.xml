@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<queues>
+	<!-- 
+	name:配置队列名，会将这行配置信息读取存为一个map。并将这个map作为value，name作为key存储在一另一个map中。结构为：Map<String,Map<String,String>>
+	value:实际和消费者和Exchange做绑定的队列名。
+	type:Exchange的类型
+	exchange:Exchange的名称
+	threadNum:监听线程数，就是说，会根据这个配置的值，创建N条线程，对队列进行监听，一旦读取到数据，就调用消费这个消费数据
+	 -->
+	
+	<!-- 队列配置 -->
+	<queue name="act_queue_name" value="act_queue_value" type="direct" exchange="actExchange" threadNum="1" desc="队列名称" />
+</queues>
